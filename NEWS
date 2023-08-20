@@ -1,0 +1,54 @@
+                  Changes in gamclass version 0.62
+                  
+NEW FEATURES
+   o The data objects `frontDeaths`, `rearDeaths`, `sideDeaths`,
+   `otherDeaths`, and `relDeaths` have been added.
+   o plotFars() now has an argument `tabDeaths`, which may be 
+   one of `frontDeaths`, or `rearDeaths`, or `sideDeaths`, or
+   `otherDeaths`, as returned by the function `tabFarsDead()`.
+   o The function `tabFarsDead()` has been added.
+   o The data object `FARSmiss` has been omitted.
+   o Records in the dataset `FARS` have been restricted to
+   those that are of interest for analyses such as are 
+   presented in the vignette `AirbagEffectiveness`.
+   o The dataset `bomregions2018` has been added.  This has
+   annual averages of meteorological data (temperature and 
+   rainfall) for Australian regions, plus annual averages 
+   of the Southern Oscillation Index, of CO2 levels, and
+   of the Dipole Mode Index for the Indian Ocean Dipole.
+   o The dataset `coralPval` has been added.  This has
+   P-values were calculated for each of 3072 genes, for 
+   data that compared genetic expression values between 
+   post-settlement coral larvae and pre-settlement coral
+   larvae.
+
+                  Changes in gamclass version 0.57
+                  
+Changes in vignettes  
+  o Argument `reg.line=NA`, in  calls to the `car` functions
+    `sp()` and `spm()` has been changed to `regLine=TRUE`, as
+    required in `car` versions >=3.0.0 .
+  o An argument `diag="boxplot"`, in figs5.Rnw in a call to
+    `car::spm()`, becomes `diagonal=list(method="boxplot")`,
+    as required in `car` versions >=3.0.0 .
+
+                  Changes in gamclass version 0.53
+
+NEW FEATURES
+  o Functions plotFars() an tabFarsDead() do not now have an argument
+    'data'.  Instead, to deal with a "No visible binding" message, 
+     data('FARS', package='gamclass', envir=environment()) is used
+    to place the dataset 'FARS' in the function environment, with
+    FARS <- get("FARS", envir=environment()) used to appease the
+    CRAN check.
+  o The functions eventCounts() (counts of events by specified intervals),
+    gamRF() (use repeated sampling to compare interpolation accuracy of
+    GAM model + randomForests fit to residual), addhlines() (plot
+    horizontal lines to show rpart fitted values) and bssBYcut()
+    (between group SS for y, for all possible splits on a value of x)
+  o Vignettes figs7 and figs8 are new.  The former vignettes figs7:figs9
+    have become figs9:figs11
+  o The dataset airAccs has been added.
+
+
+
