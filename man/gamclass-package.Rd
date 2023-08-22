@@ -1,6 +1,6 @@
-\name{modregR-package}
-\alias{modregR-package}
-\alias{modregR}
+\name{gamclass-package}
+\alias{gamclass-package}
+\alias{gamclass}
 \docType{package}
 \title{
 Functions and Data for a Course in Modern Regression
@@ -11,14 +11,14 @@ classification and multivariate exploration.
 A strong focus is on
 methods described in Wood (2017) <doi:10.1201/9781315370279>
 }
-
+\details{
 Functions are mostly designed to facilitate a variety of cross-validation
 and bootstrap calculations.
 }
 \author{
 John Maindonald
 
-Maintainer: john.maindonald@anu.edu.au
+Maintainer: jhmaindonald@gmail.com
 }
 \references{
 Venables, W N, & Ripley, B D (2013). Modern applied
